@@ -136,7 +136,7 @@ const work = [
 
 export default function Main() {
   return (
-    <div className="p-12">
+    <div className="p-4 mt-8 md:p-8 xl:p-12 xl:mt-0">
       <section id="summary" className="mb-16">
         <h1 className="text-3xl font-bold mb-6 text-gray-700">
           Full Stack Developer with 4+ Years of Expertise

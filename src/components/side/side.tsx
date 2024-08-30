@@ -23,7 +23,7 @@ const skills = [
 
 export default function Side() {
   return (
-    <div className="bg-gray-50 h-full p-8 flex flex-col items-center justify-between">
+    <div className="bg-gray-50 h-full p-4 xl:p-8 flex flex-col items-center justify-between gap-8">
       <div></div>
       <div className="w-full">
         <section className="text-center mb-6">
@@ -49,9 +49,9 @@ export default function Side() {
         </section>
       </div>
 
-      <section className="w-full flex justify-center flex-row gap-4 items-center">
+      <section className="w-full flex justify-center flex-col md:flex-row lg:flex-col xl:flex-row gap-4 items-center">
         <Button>
-          <MailIcon className="mr-2" /> Contact me
+          <MailIcon className="mr-2" /> Contact Me
         </Button>
         <Button variant="outline">
           <DocumentIcon className="mr-2" /> Download CV
@@ -81,7 +81,7 @@ export default function Side() {
         </div>
       </section>
 
-      <footer className="text-center text-sm text-gray-500">
+      <footer className="hidden lg:block text-center text-sm text-gray-500">
         © 2024 Usman Haroon. All rights reserved.
       </footer>
     </div>
