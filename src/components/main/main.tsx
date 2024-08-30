@@ -1,10 +1,12 @@
 import BuildingIcon from "@/icons/building.svg";
 import { Badge } from "../ui/badge";
+import Image from "next/image";
 
 const projects = [
   {
     id: 1,
     title: "IndexedDB Manager",
+    logo: "/idb-crud.png",
     description:
       "Engineered a high-performance Chrome DevTool extension for IndexedDB management, leveraging Preact and Vite. The extension features comprehensive data handling capabilities, including export and import functions, along with an optimized tabular interface for efficient visualization and analysis of large IndexedDB datasets. This tool enhances developers' ability to interact with and manipulate IndexedDB data directly within Chrome's developer environment.",
     technologies: [
@@ -22,6 +24,7 @@ const projects = [
   {
     id: 2,
     title: "Signals Devtool",
+    logo: "/signals-devtool.png",
     description:
       "Developed a Chrome extension for @preact/signals using Svelte and Vite, inspired by Redux DevTools. Key features include real-time signal change monitoring, a hierarchical tree view for data visualization, and a memory storage system for tracking historical changes. This tool significantly improves debugging efficiency and workflow for projects using @preact/signals, offering easy integration and valuable insights.",
     technologies: [
@@ -37,6 +40,7 @@ const projects = [
   {
     id: 2,
     title: "Bento Maker",
+    logo: "/bento-maker.png",
     description:
       "Developed a React-based web app using Vite and Konva.js for creating animated bento grids with fully customizable feature. Features include canvas animations, GPU-optimized rendering, Firebase integration for authentication and storage, and a predefined templates to reduce user work. Implemented best practices for optimal performance and user experience.",
     technologies: [
@@ -195,12 +199,20 @@ export default function Main() {
               key={project.id}
               className="rounded-lg border border-gray-200 p-4"
             >
-              <div className="flex items-center gap-2 mb-3">
-                <BuildingIcon />
+              <div className="flex items-center gap-3 mb-4">
+                <Image
+                  className=""
+                  src={project.logo}
+                  alt="idb-crud"
+                  width={24}
+                  height={24}
+                />
                 <h3 className="font-semibold text-gray-700">{project.title}</h3>
               </div>
-              <p className="text-sm text-gray-500">{project.description}</p>
-              <div className="flex flex-wrap gap-2 mt-4">
+              <p className="text-sm text-gray-500 leading-6">
+                {project.description}
+              </p>
+              <div className="flex flex-wrap gap-2 mt-5">
                 {project.technologies.map((tech) => (
                   <Badge
                     variant={"secondary"}
