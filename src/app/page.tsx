@@ -4,7 +4,7 @@ import Side from "@/components/side/side";
 export default function Home() {
   return (
     <div className="flex flex-col lg:h-screen lg:flex-row">
-      <aside className="border-r border-gray-100 lg:w-1/4 lg:overflow-hidden">
+      <aside className="border-r border-gray-100 lg:w-1/4 lg:overflow-hidden print:hidden">
         <Side />
       </aside>
 

@@ -5,21 +5,7 @@ import LinkedInIcon from "@/icons/linkedIn.svg";
 import TwitterIcon from "@/icons/twitter.svg";
 import MailIcon from "@/icons/mail.svg";
 import DocumentIcon from "@/icons/document.svg";
-
-const skills = [
-  "Javascript",
-  "Typescript",
-  "React",
-  "NextJS",
-  "Node",
-  "Express",
-  "React Native",
-  "MongoDB",
-  "MySQL",
-  "TailwindCSS",
-  "Git",
-  "AWS",
-];
+import { skills } from "@/data";
 
 export default function Side() {
   return (
