@@ -1,7 +1,7 @@
 export default function Summary() {
   return (
     <>
-      <h1 className="text-3xl font-bold mb-5 text-gray-700 print:hidden">
+      <h1 className="text-3xl font-bold mb-4 text-gray-700 print:hidden">
         Web Developer with 4+ Years of Expertise
       </h1>
       <h3 className="text-xl font-bold border-b text-gray-700 mb-2 hidden print:block">
