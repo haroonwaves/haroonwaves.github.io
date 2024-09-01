@@ -59,6 +59,12 @@
   }
 }
 
+@media print {
+  @page {
+    margin-top: 25px;
+  }
+}
+
 @layer base {
   * {
     @apply border-border;

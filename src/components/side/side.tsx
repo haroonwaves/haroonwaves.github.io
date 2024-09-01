@@ -1,10 +1,12 @@
-import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
+"use client";
+
 import GithubIcon from "@/icons/github.svg";
 import LinkedInIcon from "@/icons/linkedIn.svg";
 import TwitterIcon from "@/icons/twitter.svg";
 import MailIcon from "@/icons/mail.svg";
 import DocumentIcon from "@/icons/document.svg";
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
 import { skills } from "@/data";
 
 export default function Side() {
@@ -36,24 +38,28 @@ export default function Side() {
       </div>
 
       <section className="w-full flex justify-center flex-col md:flex-row lg:flex-col xl:flex-row gap-4 items-center">
-        <Button>
+        <Button
+          onClick={() =>
+            (window.location.href = "mailto:haroonusman00@gmail.com")
+          }
+        >
           <MailIcon className="mr-2" /> Contact Me
         </Button>
-        <Button variant="outline">
-          <DocumentIcon className="mr-2" /> Download CV
+        <Button variant="outline" onClick={() => window.print()}>
+          <DocumentIcon className="mr-2" /> Print Resume
         </Button>
       </section>
 
       <section className="w-full">
         <div className="flex justify-center space-x-4">
           <a
-            href="https://github.com/usmanharoon98"
+            href="https://github.com/haroonwaves"
             className="text-gray-400 hover:text-black transition-colors duration-300"
           >
             <GithubIcon className="w-6 h-6" />
           </a>
           <a
-            href="https://www.linkedin.com/in/usman-haroon"
+            href="https://www.linkedin.com/in/haroonwaves"
             className="text-gray-400 hover:text-black transition-colors duration-300"
           >
             <LinkedInIcon className="w-6 h-6" />
