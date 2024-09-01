@@ -22,7 +22,7 @@ jobs:
           version: 7
 
       - name: Install dependencies
-        run: pnpm install
+        run: pnpm install --frozen-lockfile
 
       - name: Build and Export
         run: pnpm run build && pnpm run export
