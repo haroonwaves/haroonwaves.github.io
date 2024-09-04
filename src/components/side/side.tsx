@@ -74,7 +74,7 @@ export default function Side() {
       </section>
 
       <footer className="hidden lg:block text-center text-sm text-gray-500">
-        © 2024 Usman Haroon. All rights reserved.
+        © 2024 Usman Haroon.
       </footer>
     </div>
   );
