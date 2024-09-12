@@ -29,7 +29,7 @@ export default function Side() {
           {skills.map((skill) => (
             <Badge
               key={skill}
-              className="bg-white border rounded-md border-input text-gray-600 hover:bg-gray-800 hover:text-white transition-colors duration-300"
+              className="bg-white border rounded-md border-input text-gray-500 hover:bg-gray-800 hover:text-white transition-colors duration-300"
             >
               {skill}
             </Badge>

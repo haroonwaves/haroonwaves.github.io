@@ -94,7 +94,7 @@ export const projects = [
 export const work = [
   {
     id: 1,
-    title: "Senior Software Developer",
+    title: "Lead Software Developer",
     company: "Supersorted",
     duration: "Aug 2021 - Present",
     description: [
